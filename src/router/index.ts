@@ -16,7 +16,17 @@ const routes: Array<RouteRecordRaw> = [
                 path: '/index',
                 name: 'index',
                 component: () => import('../views/index/index.vue'),
-            }
+            },
+            {
+                path: '/vue3',
+                name: 'vue3',
+                component: () => import('../views/vue3/index.vue'),
+            },
+            {
+                path: '/typeScript',
+                name: 'typeScript',
+                component: () => import('../views/typeScript/index.vue'),
+            },
         ]
     }
 
