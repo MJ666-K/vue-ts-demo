@@ -4,7 +4,7 @@ import {
     Location,
     // Setting,
 } from '@element-plus/icons-vue'
-import { INavMenu } from '../../modes/index'
+import { INavMenu } from './type'
 
 
 export const useMenu = () => {

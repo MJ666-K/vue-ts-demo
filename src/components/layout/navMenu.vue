@@ -23,12 +23,9 @@ const { menuItems } = useMenu()
 </template>
 
 <style scoped>
-.el-aside {
-    .el-menu {
-        /* 使用“+”，“-”时，其前后必须要有空格 */
-        height: calc(100vh - 80px);
-
-    }
+.el-menu {
+    /* 使用“+”，“-”时，其前后必须要有空格 */
+    height: calc(100vh - 80px);
 
 }
 </style>
