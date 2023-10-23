@@ -11,7 +11,6 @@ onMounted(async () => {
     tableData.value = data;
 })
 
-
 </script>
 
 <template>
@@ -19,7 +18,7 @@ onMounted(async () => {
         <el-table-column prop="id" label="序号" width="180" />
         <el-table-column prop="date" label="日期" width="180" />
         <el-table-column prop="user" label="姓名" width="180" />
-        <el-table-column prop="title" label="文章标题k" />
+        <el-table-column prop="title" label="文章标题" />
         <el-table-column prop="check" label="状态" />
     </el-table>
 </template>
