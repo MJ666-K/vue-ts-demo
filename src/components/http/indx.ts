@@ -1,7 +1,7 @@
 import axios, { type AxiosRequestConfig, AxiosResponse } from 'axios'
 import { IHttp } from './type'
 
-axios.defaults.baseURL = `http://192.168.1.19:3300/`;
+axios.defaults.baseURL = '/api'
 
 
 // 请求拦截器
