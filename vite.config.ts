@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import path from "path"
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
@@ -18,5 +19,15 @@ export default defineConfig({
   server: {
     host: "0.0.0.0",
     port: 8080,
+    cors: true,
+    strictPort: true,
+    proxy: {
+      "/api": {
+        target: "http://192.168.31.9:3300/",
+        ws: false,
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, "")
+      }
+    }
   }
 })
